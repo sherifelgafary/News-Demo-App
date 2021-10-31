@@ -7,7 +7,14 @@
 
 import UIKit
 
-class NewsListingViewController: UIViewController {
+protocol NewsListingViewProtocol: AnyObject {
+
+}
+
+class NewsListingViewController: UIViewController, NewsListingViewProtocol {
+
+    // MARK: - Properties
+    var interactor: NewsListingInteractorProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -37,6 +37,6 @@ class NewsListingViewController: UIViewController, NewsListingViewProtocol {
 
 extension NewsListingViewController: Storyboardable {
     static var storyboardObject: UIStoryboard {
-        return .main
+        return .NewsListing
     }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol NewsListingViewProtocol: AnyObject {
+protocol NewsListingViewProtocol: AnyObject, Notifiable, Loadable{
     func updateNewsList(with News: [Article])
 }
 

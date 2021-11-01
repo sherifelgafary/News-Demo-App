@@ -27,6 +27,21 @@
 		AA6EAE8F273072FA003EDC17 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE8E273072FA003EDC17 /* UIImageView.swift */; };
 		AA6EAE90273072FA003EDC17 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE8E273072FA003EDC17 /* UIImageView.swift */; };
 		AA6EAE91273072FA003EDC17 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE8E273072FA003EDC17 /* UIImageView.swift */; };
+		AA6EAE94273081C2003EDC17 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE93273081C2003EDC17 /* ProgressHUD.swift */; };
+		AA6EAE95273081C2003EDC17 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE93273081C2003EDC17 /* ProgressHUD.swift */; };
+		AA6EAE96273081C2003EDC17 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE93273081C2003EDC17 /* ProgressHUD.swift */; };
+		AA6EAE9827308302003EDC17 /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE9727308302003EDC17 /* Notifiable.swift */; };
+		AA6EAE9927308302003EDC17 /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE9727308302003EDC17 /* Notifiable.swift */; };
+		AA6EAE9A27308302003EDC17 /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE9727308302003EDC17 /* Notifiable.swift */; };
+		AA6EAE9D27308316003EDC17 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE9C27308316003EDC17 /* Toast.swift */; };
+		AA6EAE9E27308316003EDC17 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE9C27308316003EDC17 /* Toast.swift */; };
+		AA6EAE9F27308316003EDC17 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE9C27308316003EDC17 /* Toast.swift */; };
+		AA6EAEA12730851E003EDC17 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAEA02730851E003EDC17 /* Loadable.swift */; };
+		AA6EAEA22730851E003EDC17 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAEA02730851E003EDC17 /* Loadable.swift */; };
+		AA6EAEA32730851E003EDC17 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAEA02730851E003EDC17 /* Loadable.swift */; };
+		AA6EAEA7273085E6003EDC17 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAEA6273085E6003EDC17 /* SwiftLoader.swift */; };
+		AA6EAEA8273085E6003EDC17 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAEA6273085E6003EDC17 /* SwiftLoader.swift */; };
+		AA6EAEA9273085E6003EDC17 /* SwiftLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAEA6273085E6003EDC17 /* SwiftLoader.swift */; };
 		AAAD9BB3272F2700009BD346 /* NewsListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD9BB2272F2700009BD346 /* NewsListingInteractor.swift */; };
 		AAAD9BB4272F2700009BD346 /* NewsListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD9BB2272F2700009BD346 /* NewsListingInteractor.swift */; };
 		AAAD9BB5272F2700009BD346 /* NewsListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD9BB2272F2700009BD346 /* NewsListingInteractor.swift */; };
@@ -123,6 +138,11 @@
 		AA4BA838272CC3C200110C1D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AA4BA83C272CD7AC00110C1D /* NewsListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListingViewController.swift; sourceTree = "<group>"; };
 		AA6EAE8E273072FA003EDC17 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		AA6EAE93273081C2003EDC17 /* ProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		AA6EAE9727308302003EDC17 /* Notifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifiable.swift; sourceTree = "<group>"; };
+		AA6EAE9C27308316003EDC17 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		AA6EAEA02730851E003EDC17 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		AA6EAEA6273085E6003EDC17 /* SwiftLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLoader.swift; sourceTree = "<group>"; };
 		AAAD9BB2272F2700009BD346 /* NewsListingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListingInteractor.swift; sourceTree = "<group>"; };
 		AAAD9BB7272F2788009BD346 /* NewsListingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListingWorker.swift; sourceTree = "<group>"; };
 		AABBDA7C272F7DEB0041F67D /* NewsTableViewDataSourcee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewDataSourcee.swift; sourceTree = "<group>"; };
@@ -232,6 +252,7 @@
 		AA4BA82F272CBFD100110C1D /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				AA6EAE92273081AD003EDC17 /* Frameworks */,
 				AAAD9BB6272F276D009BD346 /* Workers */,
 				AACB0FE2272E3BDF000DD615 /* View */,
 				AACB0FDC272E356B000DD615 /* Main app router */,
@@ -281,6 +302,40 @@
 				AA6EAE8E273072FA003EDC17 /* UIImageView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AA6EAE92273081AD003EDC17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6EAEA5273085E6003EDC17 /* SwiftLoader */,
+				AA6EAEA4273085AD003EDC17 /* ProgressHUD */,
+				AA6EAE9B27308316003EDC17 /* Toast */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA6EAE9B27308316003EDC17 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				AA6EAE9C27308316003EDC17 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		AA6EAEA4273085AD003EDC17 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AA6EAE93273081C2003EDC17 /* ProgressHUD.swift */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		AA6EAEA5273085E6003EDC17 /* SwiftLoader */ = {
+			isa = PBXGroup;
+			children = (
+				AA6EAEA6273085E6003EDC17 /* SwiftLoader.swift */,
+			);
+			path = SwiftLoader;
 			sourceTree = "<group>";
 		};
 		AAAD9BB1272F26DE009BD346 /* Interactor */ = {
@@ -424,6 +479,8 @@
 			isa = PBXGroup;
 			children = (
 				AACB0FE3272E3BEC000DD615 /* Configrator.swift */,
+				AA6EAE9727308302003EDC17 /* Notifiable.swift */,
+				AA6EAEA02730851E003EDC17 /* Loadable.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -572,7 +629,9 @@
 			files = (
 				AABBDA9B272F93110041F67D /* NewsListingRequest.swift in Sources */,
 				AABBDA8D272F7F9F0041F67D /* UIView.swift in Sources */,
+				AA6EAE94273081C2003EDC17 /* ProgressHUD.swift in Sources */,
 				AABBDA7D272F7DEB0041F67D /* NewsTableViewDataSourcee.swift in Sources */,
+				AA6EAE9827308302003EDC17 /* Notifiable.swift in Sources */,
 				AABBDA81272F7E010041F67D /* NewsTableViewDelegate.swift in Sources */,
 				AACB0FEE272E3F51000DD615 /* NewsListingPresenter.swift in Sources */,
 				AA4BA7FE272CBDD000110C1D /* AppDelegate.swift in Sources */,
@@ -581,16 +640,19 @@
 				AABBDA97272F92B00041F67D /* BaseRequest.swift in Sources */,
 				AAAD9BB8272F2788009BD346 /* NewsListingWorker.swift in Sources */,
 				AABBDA92272F8FF40041F67D /* NewsAppAPI.swift in Sources */,
+				AA6EAE9D27308316003EDC17 /* Toast.swift in Sources */,
 				AACB0FDE272E36A3000DD615 /* MainAppRoter.swift in Sources */,
 				AA4BA83D272CD7AC00110C1D /* NewsListingViewController.swift in Sources */,
 				AACB0FC7272E14D2000DD615 /* EndPointProvider.swift in Sources */,
 				AA4BA839272CC3C200110C1D /* UIViewController.swift in Sources */,
+				AA6EAEA7273085E6003EDC17 /* SwiftLoader.swift in Sources */,
 				AACB0FD5272E154F000DD615 /* JSONEncoding.swift in Sources */,
 				AA4BA800272CBDD000110C1D /* SceneDelegate.swift in Sources */,
 				AACB0FE8272E3DF3000DD615 /* NewsListingConnfigrator.swift in Sources */,
 				AABBDAA0272F957F0041F67D /* NewsListingResponse.swift in Sources */,
 				AACB0FD0272E1525000DD615 /* ParametersEncoding.swift in Sources */,
 				AACB0FCB272E14EC000DD615 /* EndPointRequest.swift in Sources */,
+				AA6EAEA12730851E003EDC17 /* Loadable.swift in Sources */,
 				AACB0FE4272E3BEC000DD615 /* Configrator.swift in Sources */,
 				AAAD9BB3272F2700009BD346 /* NewsListingInteractor.swift in Sources */,
 				AACB0FD9272E1566000DD615 /* URLQueryEncoding.swift in Sources */,
@@ -602,20 +664,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA6EAEA8273085E6003EDC17 /* SwiftLoader.swift in Sources */,
 				AACB0FCC272E14EC000DD615 /* EndPointRequest.swift in Sources */,
+				AA6EAEA22730851E003EDC17 /* Loadable.swift in Sources */,
 				AACB0FDF272E36A3000DD615 /* MainAppRoter.swift in Sources */,
 				AA4BA83E272CD7AC00110C1D /* NewsListingViewController.swift in Sources */,
 				AACB0FD1272E1525000DD615 /* ParametersEncoding.swift in Sources */,
 				AACB0FDA272E1566000DD615 /* URLQueryEncoding.swift in Sources */,
 				AACB0FC8272E14D2000DD615 /* EndPointProvider.swift in Sources */,
+				AA6EAE9927308302003EDC17 /* Notifiable.swift in Sources */,
 				AAAD9BB4272F2700009BD346 /* NewsListingInteractor.swift in Sources */,
 				AA4BA836272CC2CF00110C1D /* StoryBoard.swift in Sources */,
+				AA6EAE95273081C2003EDC17 /* ProgressHUD.swift in Sources */,
 				AABBDA87272F7F120041F67D /* NewsTableViewCell.swift in Sources */,
 				AACB0FE9272E3DF3000DD615 /* NewsListingConnfigrator.swift in Sources */,
 				AABBDA7E272F7DEB0041F67D /* NewsTableViewDataSourcee.swift in Sources */,
 				AA4BA815272CBDD200110C1D /* News_AppTests.swift in Sources */,
 				AAAD9BB9272F2788009BD346 /* NewsListingWorker.swift in Sources */,
 				AABBDA8E272F7F9F0041F67D /* UIView.swift in Sources */,
+				AA6EAE9E27308316003EDC17 /* Toast.swift in Sources */,
 				AACB0FE5272E3BEC000DD615 /* Configrator.swift in Sources */,
 				AABBDA9C272F93110041F67D /* NewsListingRequest.swift in Sources */,
 				AA6EAE90273072FA003EDC17 /* UIImageView.swift in Sources */,
@@ -635,7 +702,9 @@
 			files = (
 				AABBDA9D272F93110041F67D /* NewsListingRequest.swift in Sources */,
 				AABBDA8F272F7FA00041F67D /* UIView.swift in Sources */,
+				AA6EAE96273081C2003EDC17 /* ProgressHUD.swift in Sources */,
 				AABBDA7F272F7DEB0041F67D /* NewsTableViewDataSourcee.swift in Sources */,
+				AA6EAE9A27308302003EDC17 /* Notifiable.swift in Sources */,
 				AABBDA83272F7E010041F67D /* NewsTableViewDelegate.swift in Sources */,
 				AACB0FF0272E3F51000DD615 /* NewsListingPresenter.swift in Sources */,
 				AA4BA821272CBDD200110C1D /* News_AppUITestsLaunchTests.swift in Sources */,
@@ -644,16 +713,19 @@
 				AABBDA99272F92B00041F67D /* BaseRequest.swift in Sources */,
 				AAAD9BBA272F2788009BD346 /* NewsListingWorker.swift in Sources */,
 				AABBDA94272F8FF40041F67D /* NewsAppAPI.swift in Sources */,
+				AA6EAE9F27308316003EDC17 /* Toast.swift in Sources */,
 				AACB0FE0272E36A3000DD615 /* MainAppRoter.swift in Sources */,
 				AA4BA83F272CD7AC00110C1D /* NewsListingViewController.swift in Sources */,
 				AACB0FC9272E14D2000DD615 /* EndPointProvider.swift in Sources */,
 				AA4BA83B272CC3C200110C1D /* UIViewController.swift in Sources */,
+				AA6EAEA9273085E6003EDC17 /* SwiftLoader.swift in Sources */,
 				AACB0FD7272E154F000DD615 /* JSONEncoding.swift in Sources */,
 				AA4BA81F272CBDD200110C1D /* News_AppUITests.swift in Sources */,
 				AACB0FEA272E3DF3000DD615 /* NewsListingConnfigrator.swift in Sources */,
 				AABBDAA2272F957F0041F67D /* NewsListingResponse.swift in Sources */,
 				AACB0FD2272E1525000DD615 /* ParametersEncoding.swift in Sources */,
 				AACB0FCD272E14EC000DD615 /* EndPointRequest.swift in Sources */,
+				AA6EAEA32730851E003EDC17 /* Loadable.swift in Sources */,
 				AACB0FE6272E3BEC000DD615 /* Configrator.swift in Sources */,
 				AAAD9BB5272F2700009BD346 /* NewsListingInteractor.swift in Sources */,
 				AACB0FDB272E1566000DD615 /* URLQueryEncoding.swift in Sources */,

@@ -28,8 +28,10 @@ final class NewsListingInteractor: NewsListingInteractorProtocol {
     
     // MARK: - Functions
     func getNewsList(with searchKeyword: String) {
+        presenter.showLoading()
         if newsListingWorker.shouldContinuePaging {
             newsListingWorker.getNewsList(with: searchKeyword) { [weak self] result in
+                self?.presenter.hideLoading()
                 switch result {
                 case .success(let news):
                     self?.presenter.show(News: news)

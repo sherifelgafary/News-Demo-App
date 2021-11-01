@@ -10,6 +10,8 @@ import Foundation
 protocol NewsListingPresenterProtocol {
     func show(News news: [Article])
     func show(Error error: Error)
+    func showLoading()
+    func hideLoading()
 }
 
 final class NewsListingPresenter: NewsListingPresenterProtocol {
@@ -28,6 +30,14 @@ final class NewsListingPresenter: NewsListingPresenterProtocol {
     }
     
     func show(Error error: Error) {
-        
+        view.show(notification: .error(error.localizedDescription))
+    }
+    
+    func showLoading() {
+        view.showLoader()
+    }
+    
+    func hideLoading() {
+        view.hideLoader()
     }
 }

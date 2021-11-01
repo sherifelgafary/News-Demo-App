@@ -9,5 +9,6 @@ import Foundation
 import UIKit
 
 protocol ConfiguratorProtocol {
-    static func configureVC() -> UIViewController
+    associatedtype INPUT
+    static func configureVC(with input: INPUT) -> UIViewController
 }

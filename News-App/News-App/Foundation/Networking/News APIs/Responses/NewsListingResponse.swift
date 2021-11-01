@@ -23,6 +23,14 @@ struct Article: Codable {
     let publishedAt: String
     let content: String
 
+    var creationDate: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let date = dateFormatter.date(from: self.publishedAt)!
+        dateFormatter.dateFormat = "EEEE, MMM d, yyyy HH:mm"
+        return dateFormatter.string(from: date)
+    }
+    
     enum CodingKeys: String, CodingKey {
         case source, author, title
         case articleDescription = "description"

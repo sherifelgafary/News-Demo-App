@@ -20,7 +20,8 @@ protocol MainAppRoter {
 
 class MainAppRoterImplementation: MainAppRoter {
     var navigationController: UINavigationController?
-
+  
+    // MARK: - Init
     required init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -34,7 +35,7 @@ class MainAppRoterImplementation: MainAppRoter {
     }
     
     func getNewsListingView() -> UIViewController {
-        let newsListingVC = NewsListingConnfigrator.configureVC()
+        let newsListingVC = NewsListingConnfigrator.configureVC(with: self.navigationController!)
         return newsListingVC
     }
 }

@@ -33,5 +33,6 @@ class NewsTableViewCell: UITableViewCell {
         self.newsTitleLabel.text = newsItem.title
         self.newsDescriptionLabel.text = newsItem.articleDescription
         self.newsThumbnailImageView.setImage(stringUrl: newsItem.urlToImage, placeholderImage: UIImage(named: "placeholder image")!)
+        self.layoutIfNeeded()
     }
 }

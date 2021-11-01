@@ -11,7 +11,8 @@ import UIKit
 class NewsTableViewDelegate: NSObject, UITableViewDelegate {
     var news: [Article] = []
     let fetchNewDataDelegate: NewsListingViewFetchNewDataProtocol
-    
+   
+    // MARK: - Init
     init(fetchNewDataDelegate: NewsListingViewFetchNewDataProtocol) {
         self.fetchNewDataDelegate = fetchNewDataDelegate
     }

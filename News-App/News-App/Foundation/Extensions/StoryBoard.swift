@@ -9,4 +9,5 @@ import UIKit
 
 extension UIStoryboard {
     static let NewsListing = UIStoryboard.init(name: "NewsListing", bundle: nil)
+    static let NewsDetails = UIStoryboard.init(name: "NewsDetails", bundle: nil)
 }

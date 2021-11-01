@@ -10,7 +10,7 @@ import Foundation
 class NewsListingRequest: BaseRequest {
     var searchKeyWord: String
     var page: Int
-    var pageSize: Int = 15
+    var pageSize: Int = 20
     var sortBy: String = "popularity"
     var apiKey: String = "c3de4c588af043478790ab2faecd937d"
     override var path: String { "/everything" }
@@ -22,6 +22,7 @@ class NewsListingRequest: BaseRequest {
         "apiKey": apiKey
     ]}
     
+    // MARK: - Init
     init(searchKeyWord:String, page:Int) {
         self.searchKeyWord = searchKeyWord
         self.page = page

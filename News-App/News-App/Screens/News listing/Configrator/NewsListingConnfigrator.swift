@@ -9,12 +9,15 @@ import Foundation
 import UIKit
 
 struct NewsListingConnfigrator: ConfiguratorProtocol {
-    static func configureVC() -> UIViewController {
+    typealias INPUT = UINavigationController
+    static func configureVC(with input: UINavigationController) -> UIViewController {
         let view = NewsListingViewController.storyboardViewController()
         let presenter = NewsListingPresenter(view: view)
         let interactor = NewsListingInteractor(presenter: presenter,
                                                newsListingWorker: NewsListingWorker())
+        let router = NewsListingRouter(navigationController: input)
         view.interactor = interactor
+        view.router = router
         return view
     }
 }

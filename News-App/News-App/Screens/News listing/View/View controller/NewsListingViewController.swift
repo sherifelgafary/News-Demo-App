@@ -28,6 +28,7 @@ class NewsListingViewController: UIViewController, NewsListingViewProtocol {
         sc.searchBar.placeholder = "Search for news"
         return sc
     }()
+    var router: NewsListingRouterProtocol!
     var interactor: NewsListingInteractorProtocol!
     var newsTableViewDataSourcee = NewsTableViewDataSourcee()
     var newsTableViewDelegate: NewsTableViewDelegate!
@@ -87,7 +88,7 @@ extension NewsListingViewController: NewsListingViewFetchNewDataProtocol {
     }
     
     func newsItemIsSelected(newsItem: Article) {
-        
+        self.router.newsItemClicked(newsItem: newsItem)
     }
 }
 

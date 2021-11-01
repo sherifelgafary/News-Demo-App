@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailsViewController" id="Y6W-OH-hqX" customClass="NewsDetailsViewController" customModule="News_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10e1a87a87d6d21619d7d5f240a1ef09" translatesAutoresizingMaskIntoConstraints="NO" id="Yxd-Tp-AdA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZn-Yw-Nus">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeO-k4-Mpi">
+                                        <rect key="frame" x="12" y="193.5" width="390" height="90"/>
+                                        <string key="text">When you know there aren’t many new features to be found, ignoring software update notifications in favor of doing literally anything else can be all too easy. We’re here to implore you to update this latest one, however, since Apple’s latest software is esse…</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Download Your iPhone's Latest Security Update ASAP" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FC-oV-TTE">
+                                        <rect key="frame" x="12" y="137.5" width="390" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GeO-k4-Mpi" secondAttribute="bottom" constant="75" id="OVk-kJ-KCA"/>
+                                    <constraint firstItem="1FC-oV-TTE" firstAttribute="trailing" secondItem="GeO-k4-Mpi" secondAttribute="trailing" id="Ooh-TI-qIS"/>
+                                    <constraint firstItem="1FC-oV-TTE" firstAttribute="leading" secondItem="GeO-k4-Mpi" secondAttribute="leading" id="iX6-zn-yqw"/>
+                                    <constraint firstItem="GeO-k4-Mpi" firstAttribute="top" secondItem="1FC-oV-TTE" secondAttribute="bottom" constant="8" id="mrl-fp-bc1"/>
+                                    <constraint firstItem="GeO-k4-Mpi" firstAttribute="leading" secondItem="qZn-Yw-Nus" secondAttribute="leading" constant="12" id="p5S-Cr-mgq"/>
+                                    <constraint firstAttribute="trailing" secondItem="GeO-k4-Mpi" secondAttribute="trailing" constant="12" id="pNZ-tK-JMc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f57-wC-vig">
+                                <rect key="frame" x="-10" y="298.5" width="434" height="647.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="-3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbZ-QK-ubi">
+                                <rect key="frame" x="-10" y="298.5" width="434" height="563.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muN-14-kSW" customClass="DesignableView" customModule="News_App" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="0.0" width="414" height="434.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Source: Lifehacker.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUG-iL-8xG">
+                                                <rect key="frame" x="16" y="32" width="382" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="Text secondry color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" text="author: Jake Peterson" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCe-WG-Bwx">
+                                                <rect key="frame" x="16" y="58" width="382" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="Text secondry color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" text="Created At: 2021-10-12 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axS-Qn-n0s">
+                                                <rect key="frame" x="16" y="84" width="382" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" name="Text secondry color"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMh-3p-cOx">
+                                                <rect key="frame" x="16" y="114" width="382" height="167.5"/>
+                                                <string key="text">content: "When you know there arent many new features to be found, ignoring software update notifications in favor of doing literally anything else can be all too easy. Were here to implore you to update this … [+2688 chars]"
+</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUa-gj-UhU" customClass="DesignableButton" customModule="News_App" customModuleProvider="target">
+                                                <rect key="frame" x="277" y="305.5" width="121" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="dyl-rC-tud"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" imagePlacement="trailing" title="Read more" imagePadding="8">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="22"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="-3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="readMoreClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="l2F-eC-osp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="lUa-gj-UhU" secondAttribute="bottom" constant="85" id="6ke-5T-wzZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="GUG-iL-8xG" secondAttribute="trailing" constant="16" id="9LN-Ug-xcX"/>
+                                            <constraint firstItem="bMh-3p-cOx" firstAttribute="trailing" secondItem="axS-Qn-n0s" secondAttribute="trailing" id="9Wb-xL-Px8"/>
+                                            <constraint firstItem="axS-Qn-n0s" firstAttribute="top" secondItem="uCe-WG-Bwx" secondAttribute="bottom" constant="8" id="Dak-a5-WRd"/>
+                                            <constraint firstItem="uCe-WG-Bwx" firstAttribute="leading" secondItem="GUG-iL-8xG" secondAttribute="leading" id="Dxf-RD-Zdq"/>
+                                            <constraint firstItem="lUa-gj-UhU" firstAttribute="trailing" secondItem="bMh-3p-cOx" secondAttribute="trailing" id="Gkc-zI-WFi"/>
+                                            <constraint firstItem="uCe-WG-Bwx" firstAttribute="top" secondItem="GUG-iL-8xG" secondAttribute="bottom" constant="8" id="InY-0R-ueA"/>
+                                            <constraint firstItem="bMh-3p-cOx" firstAttribute="leading" secondItem="axS-Qn-n0s" secondAttribute="leading" id="Y1b-Qh-XYR"/>
+                                            <constraint firstItem="GUG-iL-8xG" firstAttribute="top" secondItem="muN-14-kSW" secondAttribute="top" constant="32" id="brS-aG-xwF"/>
+                                            <constraint firstItem="axS-Qn-n0s" firstAttribute="leading" secondItem="uCe-WG-Bwx" secondAttribute="leading" id="jAy-ca-kcw"/>
+                                            <constraint firstItem="bMh-3p-cOx" firstAttribute="top" secondItem="axS-Qn-n0s" secondAttribute="bottom" constant="12" id="oTj-Rw-1eh"/>
+                                            <constraint firstItem="axS-Qn-n0s" firstAttribute="trailing" secondItem="uCe-WG-Bwx" secondAttribute="trailing" id="sET-Ju-pau"/>
+                                            <constraint firstItem="lUa-gj-UhU" firstAttribute="top" secondItem="bMh-3p-cOx" secondAttribute="bottom" constant="24" id="sdc-ym-mw8"/>
+                                            <constraint firstItem="uCe-WG-Bwx" firstAttribute="trailing" secondItem="GUG-iL-8xG" secondAttribute="trailing" id="vOz-01-64M"/>
+                                            <constraint firstItem="GUG-iL-8xG" firstAttribute="leading" secondItem="muN-14-kSW" secondAttribute="leading" constant="16" id="z9j-Uh-bfJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="muN-14-kSW" firstAttribute="top" secondItem="hbZ-QK-ubi" secondAttribute="top" id="8aF-CW-bPv"/>
+                                    <constraint firstAttribute="trailing" secondItem="muN-14-kSW" secondAttribute="trailing" id="Cr8-j4-cnt"/>
+                                    <constraint firstItem="muN-14-kSW" firstAttribute="leading" secondItem="hbZ-QK-ubi" secondAttribute="leading" constant="10" id="cil-e2-Kiv"/>
+                                    <constraint firstAttribute="bottom" secondItem="muN-14-kSW" secondAttribute="bottom" constant="-75" id="ozo-ar-kz1"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="O4y-VM-DkE"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="YTW-g0-4nD"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f57-wC-vig" firstAttribute="trailing" secondItem="hbZ-QK-ubi" secondAttribute="trailing" id="6c9-jH-Byx"/>
+                            <constraint firstItem="hbZ-QK-ubi" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="-10" id="BGw-jj-TZb"/>
+                            <constraint firstItem="Yxd-Tp-AdA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ei7-Cc-asL"/>
+                            <constraint firstItem="qZn-Yw-Nus" firstAttribute="trailing" secondItem="Yxd-Tp-AdA" secondAttribute="trailing" id="EkN-wm-vSh"/>
+                            <constraint firstItem="muN-14-kSW" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="H7T-Ot-S85"/>
+                            <constraint firstItem="qZn-Yw-Nus" firstAttribute="leading" secondItem="Yxd-Tp-AdA" secondAttribute="leading" id="HaQ-cQ-4AY"/>
+                            <constraint firstItem="f57-wC-vig" firstAttribute="top" secondItem="hbZ-QK-ubi" secondAttribute="top" id="N66-DO-6op"/>
+                            <constraint firstItem="Yxd-Tp-AdA" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="NUZ-As-aMe"/>
+                            <constraint firstItem="f57-wC-vig" firstAttribute="leading" secondItem="hbZ-QK-ubi" secondAttribute="leading" id="b7R-MV-rWP"/>
+                            <constraint firstItem="qZn-Yw-Nus" firstAttribute="bottom" secondItem="Yxd-Tp-AdA" secondAttribute="bottom" id="dBf-uZ-rtA"/>
+                            <constraint firstAttribute="trailing" secondItem="hbZ-QK-ubi" secondAttribute="trailing" constant="-10" id="kdD-xM-bT6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="hbZ-QK-ubi" secondAttribute="bottom" id="lqz-m4-Jqn"/>
+                            <constraint firstItem="hbZ-QK-ubi" firstAttribute="top" secondItem="Yxd-Tp-AdA" secondAttribute="bottom" constant="-60" id="qT8-IX-xtO"/>
+                            <constraint firstItem="qZn-Yw-Nus" firstAttribute="top" secondItem="Yxd-Tp-AdA" secondAttribute="top" id="saE-vn-IbH"/>
+                            <constraint firstAttribute="bottom" secondItem="f57-wC-vig" secondAttribute="bottom" constant="-50" id="t73-8W-djG"/>
+                            <constraint firstItem="Yxd-Tp-AdA" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="uRP-Gd-TAp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Yxd-Tp-AdA" secondAttribute="trailing" id="ysA-vH-dzK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="authorLabel" destination="uCe-WG-Bwx" id="TkL-fk-SkX"/>
+                        <outlet property="contentLabel" destination="bMh-3p-cOx" id="jAt-fH-glZ"/>
+                        <outlet property="createdAtLabel" destination="axS-Qn-n0s" id="Mgg-Rq-wFj"/>
+                        <outlet property="newsDescriptionLabel" destination="GeO-k4-Mpi" id="FeT-vb-w9W"/>
+                        <outlet property="newsThumbnailImageView" destination="Yxd-Tp-AdA" id="Inj-7v-ZgK"/>
+                        <outlet property="newsTitleLabel" destination="1FC-oV-TTE" id="DyH-F6-Iig"/>
+                        <outlet property="sourceLabel" destination="GUG-iL-8xG" id="FZL-CE-STC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10e1a87a87d6d21619d7d5f240a1ef09" width="1200" height="675"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text secondry color">
+            <color red="0.6600000262260437" green="0.6600000262260437" blue="0.6600000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

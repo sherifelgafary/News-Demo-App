@@ -28,13 +28,13 @@
                                     <constraint firstAttribute="height" constant="175" id="BGo-td-ziI"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBd-Es-pUZ" customClass="DesignableLabel" customModule="News_App" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBd-Es-pUZ" customClass="DesignableLabel" customModule="News_App" customModuleProvider="target">
                                 <rect key="frame" x="12" y="213.5" width="363" height="19.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" name="Text primary color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dky-eM-JtE" customClass="DesignableLabel" customModule="News_App" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dky-eM-JtE" customClass="DesignableLabel" customModule="News_App" customModuleProvider="target">
                                 <rect key="frame" x="12" y="241" width="363" height="63"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" name="Text secondry color"/>
@@ -93,6 +93,12 @@
     <designables>
         <designable name="G0T-nB-yOU">
             <size key="intrinsicContentSize" width="638" height="362"/>
+        </designable>
+        <designable name="dky-eM-JtE">
+            <size key="intrinsicContentSize" width="39.5" height="19.5"/>
+        </designable>
+        <designable name="iBd-Es-pUZ">
+            <size key="intrinsicContentSize" width="42.5" height="19.5"/>
         </designable>
     </designables>
     <resources>

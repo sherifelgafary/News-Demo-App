@@ -9,31 +9,24 @@ import Foundation
 
 protocol NewsListingWorkerProtocol {
     var page: Int { get set }
-    var searchKeyword: String? { get set }
     var shouldContinuePaging: Bool { get set }
-
+    
     typealias NewsListingResult =  Result<[Article], Error>
     typealias NewsListingAPIResult =  Result<NewsListingResponse, Error>
     
-    func getNewsList(using searchKeyword:String?, resultHandler: @escaping (NewsListingResult) -> Void)
+    func getNewsList(with searchKeyword:String, resultHandler: @escaping (NewsListingResult) -> Void)
 }
 
 final class NewsListingWorker: NewsListingWorkerProtocol {
-
+    
     // MARK: - Properties
     private var newsListingRequest: NewsListingRequest!
     var page: Int = 1
-    var searchKeyword: String? = nil
     var shouldContinuePaging: Bool = true
     
     // MARK: - Functions
-    func getNewsList(using searchKeyword:String?, resultHandler: @escaping (NewsListingResult) -> Void) {
-        if searchKeyword != nil {
-            self.searchKeyword = searchKeyword
-            self.page = 1
-            self.shouldContinuePaging = true
-        }
-        self.newsListingRequest = NewsListingRequest(searchKeyWord: self.searchKeyword, page: self.page)
+    func getNewsList(with searchKeyword:String, resultHandler: @escaping (NewsListingResult) -> Void) {
+        self.newsListingRequest = NewsListingRequest(searchKeyWord: searchKeyword, page: self.page)
         let api = self.newsListingRequest.provider
         api.execute(self.newsListingRequest) { (result: NewsListingAPIResult) in
             self.page += 1

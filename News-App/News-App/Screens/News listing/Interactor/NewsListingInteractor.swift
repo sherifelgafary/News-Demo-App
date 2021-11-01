@@ -10,7 +10,7 @@ import Foundation
 protocol NewsListingInteractorProtocol {
     init(presenter: NewsListingPresenterProtocol,
          newsListingWorker: NewsListingWorkerProtocol)
-    func getNewsList(with searchKeyword: String?)
+    func getNewsList(with searchKeyword: String)
 }
 
 final class NewsListingInteractor: NewsListingInteractorProtocol {
@@ -27,14 +27,14 @@ final class NewsListingInteractor: NewsListingInteractorProtocol {
     }
     
     // MARK: - Functions
-    func getNewsList(with searchKeyword: String?) {
+    func getNewsList(with searchKeyword: String) {
         if newsListingWorker.shouldContinuePaging {
-            newsListingWorker.getNewsList(using: searchKeyword) { [weak self] result in
+            newsListingWorker.getNewsList(with: searchKeyword) { [weak self] result in
                 switch result {
-                case .success(let articles):
-                    print(articles)
+                case .success(let news):
+                    self?.presenter.show(News: news)
                 case .failure(let error):
-                    print(error)
+                    self?.presenter.show(Error: error)
                 }
             }
         }

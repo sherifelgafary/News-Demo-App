@@ -24,6 +24,9 @@
 		AA4BA83D272CD7AC00110C1D /* NewsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BA83C272CD7AC00110C1D /* NewsListingViewController.swift */; };
 		AA4BA83E272CD7AC00110C1D /* NewsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BA83C272CD7AC00110C1D /* NewsListingViewController.swift */; };
 		AA4BA83F272CD7AC00110C1D /* NewsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BA83C272CD7AC00110C1D /* NewsListingViewController.swift */; };
+		AA6EAE8F273072FA003EDC17 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE8E273072FA003EDC17 /* UIImageView.swift */; };
+		AA6EAE90273072FA003EDC17 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE8E273072FA003EDC17 /* UIImageView.swift */; };
+		AA6EAE91273072FA003EDC17 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6EAE8E273072FA003EDC17 /* UIImageView.swift */; };
 		AAAD9BB3272F2700009BD346 /* NewsListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD9BB2272F2700009BD346 /* NewsListingInteractor.swift */; };
 		AAAD9BB4272F2700009BD346 /* NewsListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD9BB2272F2700009BD346 /* NewsListingInteractor.swift */; };
 		AAAD9BB5272F2700009BD346 /* NewsListingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAD9BB2272F2700009BD346 /* NewsListingInteractor.swift */; };
@@ -119,6 +122,7 @@
 		AA4BA834272CC2CF00110C1D /* StoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		AA4BA838272CC3C200110C1D /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		AA4BA83C272CD7AC00110C1D /* NewsListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListingViewController.swift; sourceTree = "<group>"; };
+		AA6EAE8E273072FA003EDC17 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		AAAD9BB2272F2700009BD346 /* NewsListingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListingInteractor.swift; sourceTree = "<group>"; };
 		AAAD9BB7272F2788009BD346 /* NewsListingWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListingWorker.swift; sourceTree = "<group>"; };
 		AABBDA7C272F7DEB0041F67D /* NewsTableViewDataSourcee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewDataSourcee.swift; sourceTree = "<group>"; };
@@ -274,6 +278,7 @@
 				AA4BA834272CC2CF00110C1D /* StoryBoard.swift */,
 				AA4BA838272CC3C200110C1D /* UIViewController.swift */,
 				AABBDA8C272F7F9F0041F67D /* UIView.swift */,
+				AA6EAE8E273072FA003EDC17 /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -571,6 +576,7 @@
 				AABBDA81272F7E010041F67D /* NewsTableViewDelegate.swift in Sources */,
 				AACB0FEE272E3F51000DD615 /* NewsListingPresenter.swift in Sources */,
 				AA4BA7FE272CBDD000110C1D /* AppDelegate.swift in Sources */,
+				AA6EAE8F273072FA003EDC17 /* UIImageView.swift in Sources */,
 				AA4BA835272CC2CF00110C1D /* StoryBoard.swift in Sources */,
 				AABBDA97272F92B00041F67D /* BaseRequest.swift in Sources */,
 				AAAD9BB8272F2788009BD346 /* NewsListingWorker.swift in Sources */,
@@ -612,6 +618,7 @@
 				AABBDA8E272F7F9F0041F67D /* UIView.swift in Sources */,
 				AACB0FE5272E3BEC000DD615 /* Configrator.swift in Sources */,
 				AABBDA9C272F93110041F67D /* NewsListingRequest.swift in Sources */,
+				AA6EAE90273072FA003EDC17 /* UIImageView.swift in Sources */,
 				AABBDA93272F8FF40041F67D /* NewsAppAPI.swift in Sources */,
 				AABBDAA1272F957F0041F67D /* NewsListingResponse.swift in Sources */,
 				AACB0FD6272E154F000DD615 /* JSONEncoding.swift in Sources */,
@@ -632,6 +639,7 @@
 				AABBDA83272F7E010041F67D /* NewsTableViewDelegate.swift in Sources */,
 				AACB0FF0272E3F51000DD615 /* NewsListingPresenter.swift in Sources */,
 				AA4BA821272CBDD200110C1D /* News_AppUITestsLaunchTests.swift in Sources */,
+				AA6EAE91273072FA003EDC17 /* UIImageView.swift in Sources */,
 				AA4BA837272CC2CF00110C1D /* StoryBoard.swift in Sources */,
 				AABBDA99272F92B00041F67D /* BaseRequest.swift in Sources */,
 				AAAD9BBA272F2788009BD346 /* NewsListingWorker.swift in Sources */,

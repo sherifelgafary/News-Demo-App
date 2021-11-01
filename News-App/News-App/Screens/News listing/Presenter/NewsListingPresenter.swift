@@ -8,6 +8,8 @@
 import Foundation
 
 protocol NewsListingPresenterProtocol {
+    func show(News news: [Article])
+    func show(Error error: Error)
 }
 
 final class NewsListingPresenter: NewsListingPresenterProtocol {
@@ -21,4 +23,11 @@ final class NewsListingPresenter: NewsListingPresenterProtocol {
     }
     
     // MARK: - Functions
+    func show(News news: [Article]) {
+        self.view.updateNewsList(with: news)
+    }
+    
+    func show(Error error: Error) {
+        
+    }
 }

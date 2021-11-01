@@ -9,22 +9,35 @@ import Foundation
 
 protocol NewsListingInteractorProtocol {
     init(presenter: NewsListingPresenterProtocol,
-         vehicleWorker: NewsListingWorkerProtocol)
+         newsListingWorker: NewsListingWorkerProtocol)
+    func getNewsList(with searchKeyword: String?)
 }
 
 final class NewsListingInteractor: NewsListingInteractorProtocol {
     
     // MARK: - Properties
     let presenter: NewsListingPresenterProtocol
-    let vehicleWorker: NewsListingWorkerProtocol
+    let newsListingWorker: NewsListingWorkerProtocol
     
     // MARK: - Init
     init(presenter: NewsListingPresenterProtocol,
-         vehicleWorker: NewsListingWorkerProtocol) {
+         newsListingWorker: NewsListingWorkerProtocol) {
         self.presenter = presenter
-        self.vehicleWorker = vehicleWorker
+        self.newsListingWorker = newsListingWorker
     }
     
     // MARK: - Functions
-
+    func getNewsList(with searchKeyword: String?) {
+        if newsListingWorker.shouldContinuePaging {
+            newsListingWorker.getNewsList(using: searchKeyword) { [weak self] result in
+                switch result {
+                case .success(let articles):
+                    print(articles)
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }
+    
 }

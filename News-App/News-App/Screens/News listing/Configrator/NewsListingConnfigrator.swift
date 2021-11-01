@@ -13,7 +13,7 @@ struct NewsListingConnfigrator: ConfiguratorProtocol {
         let view = NewsListingViewController.storyboardViewController()
         let presenter = NewsListingPresenter(view: view)
         let interactor = NewsListingInteractor(presenter: presenter,
-                                            vehicleWorker: NewsListingWorker())
+                                               newsListingWorker: NewsListingWorker())
         view.interactor = interactor
         return view
     }

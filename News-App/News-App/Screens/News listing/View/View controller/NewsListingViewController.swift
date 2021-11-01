@@ -51,10 +51,14 @@ class NewsListingViewController: UIViewController, NewsListingViewProtocol {
     }
 }
 
-// MARK: - UISearchResult Updating and UISearchControllerDelegate  Extension
+// MARK: - UISearchBarDelegate  Extension
   extension NewsListingViewController: UISearchBarDelegate {
       func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-          print(searchBar.text)
+          self.interactor.getNewsList(with: searchBar.text)
+      }
+      
+      func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+          self.interactor.getNewsList(with: searchBar.text)
       }
   }
 

@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = MainAppRoterImplementation(navigationController: UINavigationController()).getNewsListingView()
+            window.rootViewController = MainAppRoterImplementation(navigationController: UINavigationController()).manageAppStartRoute(with: .MainFlow)
             self.window = window
             window.makeKeyAndVisible()
         }

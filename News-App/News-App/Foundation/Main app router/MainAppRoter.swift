@@ -19,7 +19,7 @@ protocol MainAppRoter {
 }
 
 class MainAppRoterImplementation: MainAppRoter {
-    weak var navigationController: UINavigationController?
+    var navigationController: UINavigationController?
 
     required init(navigationController: UINavigationController) {
         self.navigationController = navigationController

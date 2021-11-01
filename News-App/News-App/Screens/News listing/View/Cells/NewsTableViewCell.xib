@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="332" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="News_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="332"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="332"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aH9-W1-L18" customClass="DesignableView" customModule="News_App" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="387" height="316"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder image" translatesAutoresizingMaskIntoConstraints="NO" id="G0T-nB-yOU" customClass="DesignableImageView" customModule="News_App" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="387" height="175"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="BGo-td-ziI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBd-Es-pUZ" customClass="DesignableLabel" customModule="News_App" customModuleProvider="target">
+                                <rect key="frame" x="12" y="213.5" width="363" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" name="Text primary color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dky-eM-JtE" customClass="DesignableLabel" customModule="News_App" customModuleProvider="target">
+                                <rect key="frame" x="12" y="241" width="363" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="Text secondry color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dky-eM-JtE" firstAttribute="trailing" secondItem="iBd-Es-pUZ" secondAttribute="trailing" id="4Zh-Jr-HFe"/>
+                            <constraint firstItem="dky-eM-JtE" firstAttribute="leading" secondItem="iBd-Es-pUZ" secondAttribute="leading" id="6rE-dK-SUt"/>
+                            <constraint firstItem="dky-eM-JtE" firstAttribute="top" secondItem="iBd-Es-pUZ" secondAttribute="bottom" constant="8" id="809-lA-765"/>
+                            <constraint firstAttribute="trailing" secondItem="iBd-Es-pUZ" secondAttribute="trailing" constant="12" id="8oP-gi-gfL"/>
+                            <constraint firstAttribute="bottom" secondItem="dky-eM-JtE" secondAttribute="bottom" constant="12" id="FYn-p7-nda"/>
+                            <constraint firstAttribute="trailing" secondItem="G0T-nB-yOU" secondAttribute="trailing" id="I8b-Zg-Vww"/>
+                            <constraint firstItem="iBd-Es-pUZ" firstAttribute="leading" secondItem="aH9-W1-L18" secondAttribute="leading" constant="12" id="LWn-z8-kjX"/>
+                            <constraint firstItem="G0T-nB-yOU" firstAttribute="top" secondItem="aH9-W1-L18" secondAttribute="top" id="N53-85-GnA"/>
+                            <constraint firstItem="iBd-Es-pUZ" firstAttribute="top" secondItem="G0T-nB-yOU" secondAttribute="bottom" constant="8" id="VqL-tH-J76"/>
+                            <constraint firstItem="G0T-nB-yOU" firstAttribute="leading" secondItem="aH9-W1-L18" secondAttribute="leading" id="Xln-EH-hLt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aH9-W1-L18" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Fv1-7S-efc"/>
+                    <constraint firstAttribute="trailing" secondItem="aH9-W1-L18" secondAttribute="trailing" constant="8" id="MZP-3r-QZ3"/>
+                    <constraint firstAttribute="bottom" secondItem="aH9-W1-L18" secondAttribute="bottom" constant="8" id="fAG-JS-15d"/>
+                    <constraint firstItem="aH9-W1-L18" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="sbx-jd-ufH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="newsDescriptionLabel" destination="dky-eM-JtE" id="kWj-9K-xuP"/>
+                <outlet property="newsThumbnailImageView" destination="G0T-nB-yOU" id="aDd-jC-I0G"/>
+                <outlet property="newsTitleLabel" destination="iBd-Es-pUZ" id="6ac-uX-250"/>
+            </connections>
+            <point key="canvasLocation" x="197.82608695652175" y="202.23214285714286"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="G0T-nB-yOU">
+            <size key="intrinsicContentSize" width="638" height="362"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="placeholder image" width="638" height="362"/>
+        <namedColor name="Text primary color">
+            <color red="0.33000001311302185" green="0.33000001311302185" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text secondry color">
+            <color red="0.6600000262260437" green="0.6600000262260437" blue="0.6600000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

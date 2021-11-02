@@ -94,7 +94,7 @@
                                 <rect key="frame" x="-10" y="298.5" width="434" height="563.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muN-14-kSW" customClass="DesignableView" customModule="News_App" customModuleProvider="target">
-                                        <rect key="frame" x="10" y="0.0" width="414" height="434.5"/>
+                                        <rect key="frame" x="10" y="0.0" width="414" height="381.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Source: Lifehacker.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUG-iL-8xG">
                                                 <rect key="frame" x="16" y="32" width="382" height="18"/>
@@ -156,7 +156,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="lUa-gj-UhU" secondAttribute="bottom" constant="85" id="6ke-5T-wzZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="lUa-gj-UhU" secondAttribute="bottom" constant="32" id="6ke-5T-wzZ"/>
                                             <constraint firstAttribute="trailing" secondItem="GUG-iL-8xG" secondAttribute="trailing" constant="16" id="9LN-Ug-xcX"/>
                                             <constraint firstItem="bMh-3p-cOx" firstAttribute="trailing" secondItem="axS-Qn-n0s" secondAttribute="trailing" id="9Wb-xL-Px8"/>
                                             <constraint firstItem="axS-Qn-n0s" firstAttribute="top" secondItem="uCe-WG-Bwx" secondAttribute="bottom" constant="8" id="Dak-a5-WRd"/>
@@ -179,7 +179,7 @@
                                     <constraint firstItem="muN-14-kSW" firstAttribute="top" secondItem="hbZ-QK-ubi" secondAttribute="top" id="8aF-CW-bPv"/>
                                     <constraint firstAttribute="trailing" secondItem="muN-14-kSW" secondAttribute="trailing" id="Cr8-j4-cnt"/>
                                     <constraint firstItem="muN-14-kSW" firstAttribute="leading" secondItem="hbZ-QK-ubi" secondAttribute="leading" constant="10" id="cil-e2-Kiv"/>
-                                    <constraint firstAttribute="bottom" secondItem="muN-14-kSW" secondAttribute="bottom" constant="-75" id="ozo-ar-kz1"/>
+                                    <constraint firstAttribute="bottom" secondItem="muN-14-kSW" secondAttribute="bottom" id="ozo-ar-kz1"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="O4y-VM-DkE"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="YTW-g0-4nD"/>

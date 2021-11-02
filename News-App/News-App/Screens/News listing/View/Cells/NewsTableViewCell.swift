@@ -23,16 +23,19 @@ class NewsTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+        
     override func layoutSubviews() {
         super.layoutSubviews()
         self.newsThumbnailImageView.roundCorners(corners: [.topLeft,.topRight], radius: 8)
     }
-    
+
+
     func configure(with newsItem: Article) {
         self.newsTitleLabel.text = newsItem.title
         self.newsDescriptionLabel.text = newsItem.articleDescription
         self.newsThumbnailImageView.setImage(stringUrl: newsItem.urlToImage, placeholderImage: UIImage(named: "placeholder image")!)
-        self.layoutIfNeeded()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            self.layoutSubviews()
+        }
     }
 }

@@ -44,6 +44,6 @@ class NewsDetailsViewController: UIViewController {
 
 extension NewsDetailsViewController: Storyboardable {
     static var storyboardObject: UIStoryboard {
-        return .NewsDetails
+        return UIStoryboard(name: StoryBoards.NewsDetails.rawValue, bundle: Bundle(for: self))
     }
 }

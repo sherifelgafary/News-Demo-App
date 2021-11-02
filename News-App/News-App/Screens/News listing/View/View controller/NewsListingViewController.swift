@@ -94,6 +94,6 @@ extension NewsListingViewController: NewsListingViewFetchNewDataProtocol {
 
 extension NewsListingViewController: Storyboardable {
     static var storyboardObject: UIStoryboard {
-        return .NewsListing
+        return UIStoryboard(name: StoryBoards.NewsListing.rawValue, bundle: Bundle(for: self))
     }
 }

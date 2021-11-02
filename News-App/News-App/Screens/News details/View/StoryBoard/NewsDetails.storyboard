@@ -224,11 +224,16 @@
             <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="lUa-gj-UhU">
+            <size key="intrinsicContentSize" width="121" height="31"/>
+        </designable>
+    </designables>
     <resources>
         <image name="10e1a87a87d6d21619d7d5f240a1ef09" width="1200" height="675"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <namedColor name="AccentColor">
-            <color red="1" green="0.28627450980392155" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.28600001335144043" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Text primary color">
             <color red="0.33000001311302185" green="0.33000001311302185" blue="0.33000001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
